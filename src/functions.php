@@ -46,7 +46,7 @@ function getArticleById(int $id, $connection = null)
     return $article ?? null;
 }
 
-function getCategories($connection = null): ?array
+function getCategories($connection = null): ? array
 {
     if (!$connection) {
         $connection = connection();
